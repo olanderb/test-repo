@@ -21,3 +21,7 @@ View(select(GIN, anonymizednumber, `Interviewer Number`))
 p10 <- ggplot(GIN, aes(x = sex, y = Nbre_membre)) +
   geom_boxplot()
 print(p10)
+
+#exports SPSS value label instead of value names
+data %>%  mutate_if(is.labelled, as_factor) %>% ## turn label to text (i.e factor)
+  write_csv("data.csv")
