@@ -25,3 +25,5 @@ print(p10)
 #exports SPSS value label instead of value names
 data %>%  mutate_if(is.labelled, as_factor) %>% ## turn label to text (i.e factor)
   write_csv("data.csv")
+
+##test
