@@ -35,4 +35,4 @@ capwords <- function(s, strict = FALSE) {
 }
 
 #replace 
-joined$PrefectureCFSVA <- chartr("é", "e", joined$PrefectureCFSVA)                           
+data$variable <- chartr("é", "e", data$variable)                           
